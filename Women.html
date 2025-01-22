@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women's Fashion - Myntra Clone</title>
+  <!-- Bootstrap CSS for responsiveness -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="myntralogo.jpeg" alt="Myntra Logo" height="40" class="me-2">
+          <span>Myntra</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="men.html">Men</a></li>
+            <li class="nav-item"><a class="nav-link" href="women.html">Women</a></li>
+            <li class="nav-item"><a class="nav-link" href="kids.html">Kids</a></li>
+            <li class="nav-item"><a class="nav-link" href="Home&Living.html">Home & Living</a></li>
+            <li class="nav-item"><a class="nav-link" href="Beauty.html">Beauty</a></li>
+          </ul>
+          <!-- Icons -->
+          <div class="d-flex align-items-center">
+            <a href="#" class="me-3"><img src="https://img.icons8.com/ios-glyphs/24/000000/search--v1.png" alt="Search"></a>
+            <a href="#" class="me-3"><img src="https://img.icons8.com/ios-filled/24/000000/like--v1.png" alt="Wishlist"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/24/000000/shopping-bag.png" alt="Cart"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Women’s Fashion Filters -->
+  <section class="filters my-4">
+    <div class="container">
+      <h2>Filters</h2>
+      <form class="row gy-3">
+        <div class="col-md-4">
+          <label for="category" class="form-label">Category:</label>
+          <select id="category" name="category" class="form-select">
+            <option value="clothing">Clothing</option>
+            <option value="footwear">Footwear</option>
+            <option value="accessories">Accessories</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label for="price-range" class="form-label">Price Range:</label>
+          <input type="range" id="price-range" name="price-range" class="form-range" min="500" max="10000">
+        </div>
+        <div class="col-md-4">
+          <label for="size" class="form-label">Size:</label>
+          <select id="size" name="size" class="form-select">
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Apply Filters</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Women's Products Section -->
+  <main>
+    <section class="product-list">
+      <div class="container">
+        <h2>Women's Fashion</h2>
+        <div class="row gy-4">
+          <div class="col-md-3">
+            <div class="card">
+              <img src="dress.jpeg" class="card-img-top" alt="Women's Dress">
+              <div class="card-body">
+                <p class="card-title">Women's Dress</p>
+                <p class="card-text text-muted">Price: ₹1,499</p>
+                <button class="btn btn-outline-primary w-100">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img src="blouse.jpeg" class="card-img-top" alt="Women's Blouse">
+              <div class="card-body">
+                <p class="card-title">Women's Blouse</p>
+                <p class="card-text text-muted">Price: ₹899</p>
+                <button class="btn btn-outline-primary w-100">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img src="skirt.jpeg" class="card-img-top" alt="Women's Skirt">
+              <div class="card-body">
+                <p class="card-title">Women's Skirt</p>
+                <p class="card-text text-muted">Price: ₹1,199</p>
+                <button class="btn btn-outline-primary w-100">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img src="sandle.jpeg" class="card-img-top" alt="Women's Heels">
+              <div class="card-body">
+                <p class="card-title">Women's Heels</p>
+                <p class="card-text text-muted">Price: ₹2,299</p>
+                <button class="btn btn-outline-primary w-100">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-light py-4 mt-5">
+    <div class="container text-center">
+      <div class="footer-links mb-3">
+        <a href="#" class="me-3">About Us</a>
+        <a href="#" class="me-3">Careers</a>
+        <a href="#" class="me-3">Contact Us</a>
+        <a href="#" class="me-3">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+      <p class="mb-0">&copy; 2025 Myntra Clone. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
