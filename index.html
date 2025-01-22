@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myntra Navbar</title>
+  <!-- Bootstrap CSS -->
+ adjust image half of page and down we have more image 
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="myntralogo.jpeg" alt="Myntra Logo" height="40" class="me-2">
+        Myntra
+      </a>
+      <!-- Navbar Toggler for Mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="Men.html">Men</a></li>
+          <li class="nav-item"><a class="nav-link" href="Women.html">Women</a></li>
+          <li class="nav-item"><a class="nav-link" href="kids.html">Kids</a></li>
+          <li class="nav-item"><a class="nav-link" href="Home&Living.html">Home & Living</a></li>
+          <li class="nav-item"><a class="nav-link" href="Beauty.html">Beauty</a></li>
+        </ul>
+        <!-- Search Bar -->
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search for products, brands and more" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <!-- Icons -->
+        <div class="d-flex align-items-center">
+          <a href="https://www.google.com/" class="me-3">
+            <img src="myntralogo.jpeg" alt="Profile" height="30" title="Profile">
+          </a>
+          <a href="wishlist.html" class="me-3">
+            <img src="wishlist.jpeg" alt="Wishlist" height="30">
+          </a>
+          <a href="bag.html">
+            <img src="add to bag.jpeg" alt="Bag" height="30">
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner Section -->
+  <section class="banner">
+    <img src="banner3.jpeg" alt="Banner Image" class="img-fluid w-100">
+  </section>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
